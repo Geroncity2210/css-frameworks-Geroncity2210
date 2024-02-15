@@ -5,35 +5,98 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bootstrap Workshop</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
+  <div class="container-sm-1">
+    <div class="up"> <!--Sección de color-->
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <div class="text-center">
+            <h6 style="color: #CDC1FE;">Your Result</h6>
+            <div class="circle">
+              <h1 class="center">76</h1>
+              <h6 class="center">of 100</h6>
+            </div>
+            <h4>Great</h4>
+            <p style="color: #CDC1FE;">You scored higher than 65% of the people who have taken these tests.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-1">
+      <h5 class="text-start p-3">Summary</h5>
 
 
+        <div class="card custom-red mb-3 custom-card">
+          <div class="card-body d-flex justify-content-between">
+            <div class="text-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#D86970" class="bi bi-lightning-charge" viewBox="0 0 16 16">
+                <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41z" />
+              </svg>
+              <b style="color: #D86970;">Reaction</b>
+            </div>
+            <div class="text-end">
+              <p class="card-text mb-0"><b>80</b> / 100</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card custom-yellow mb-3 custom-card">
+          <div class="card-body d-flex justify-content-between">
+            <div class="text-start">
+              <i class="fas fa-brain" style="color: #EEB83E;"></i>
+              <b style="color: #EEB83E;">Memory</b>
+            </div>
+            <div class="text-end">
+              <p class="card-text mb-0"><b>92</b> / 100</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card custom-green text-succes mb-3 custom-card">
+          <div class="card-body d-flex justify-content-between">
+            <div class="text-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#35B291" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+              </svg>
+              <b style="color: #35B291;">Verbal</b>
+            </div>
+            <div class="text-end">
+              <p class="card-text mb-0"><b>61</b> / 100</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card custom-purple text-bg-purple mb-3 custom-card">
+          <div class="card-body d-flex justify-content-between">
+            <div class="text-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5661CB" class="bi bi-eye" viewBox="0 0 16 16">
+                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+              </svg>
+              <b style="color: #5661CB;">Visual</b>
+            </div>
+            <div class="text-end">
+              <p class="card-text mb-0"><b>72</b> / 100</p>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="custom-button text-center">
+        <div class="card-body">
+          <button class="btn btn-block rounded-pill" id="btnContinue">Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- No elimine este tag -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

@@ -1,0 +1,112 @@
+.circle{
+    width: 120px;
+    height: 120px; 
+    border-radius: 50%; 
+    background: linear-gradient(to bottom, #4B24CD, #4634EF);
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    h1.center {
+        padding-top: auto;
+        font-size: 42px; /* Tamaño de fuente más grande para el número 76 */
+        color: white; /* Color del texto */
+        margin: 0;
+        text-align: center;
+    }
+    h6.center {
+        font-size: 14px; /* Tamaño de fuente más pequeño para el texto "of 100" */
+        color: #8273FF; /* Color del texto */
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.colorin{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.custom-card {
+    max-height: 60px; /* Ajusta el ancho máximo según sea necesario */
+  }
+.custom-red {
+    background: linear-gradient(to bottom, #FFF7F6, #FFF7F6); /* Degradado de rojo claro a rojo oscuro */
+  }
+  .custom-yellow {
+    background: linear-gradient(to bottom, #FEFBF2, #FEFBF2); /* Degradado de rojo claro a rojo oscuro */
+  }
+  .custom-purple {
+    background: linear-gradient(to bottom, #F3F3FD, #F3F3FD); /* Degradado de rojo claro a rojo oscuro */
+  }
+  .custom-green {
+    background: linear-gradient(to bottom, #F4FAFA, #F4FAFA); /* Degradado de rojo claro a rojo oscuro */
+  }
+  .center{
+    padding-top: 1rem;
+  }
+  #btnContinue{
+    width: 100%;
+    border-radius: 30%;
+    background-color: rgb(48, 59, 89);
+    color: white;
+  }
+
+  #btnContinue:hover {
+    background-color: #5E3FFB; /* Color de fondo cuando el mouse está encima */
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Estilos para el cuerpo de la página */
+    .container-sm-1{
+        height: 100%;
+    }
+    .up{
+        background: linear-gradient(to bottom, #6742FD, #322DE9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        color: white;
+        padding-top: 1rem;
+    }
+    .container.mt-1{
+        width: 100%;
+    }
+}
+    @media screen and (min-width: 769px) {  /* Estilos para visualización en pc */
+    .container-sm-1 {
+        display: flex;
+        justify-content: center;
+        height: 500px,
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container.mt-1 {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-left: 20px; /* Adjust spacing as needed */
+    } 
+    .up{
+        background: linear-gradient(to bottom, #6742FD, #322DE9);
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        color: white;
+    }
+}
